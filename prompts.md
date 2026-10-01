@@ -22,14 +22,20 @@ Borra el ejemplo de abajo cuando escribas el primero.
 
 ## Prompt 1
 
-**Modelo:** Opus 1M xHigh
-**Herramienta:** Claude Code
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code (app de escritorio, código leído en WSL)
 
 ```
-Este es el ejemplo. Bórralo.
-
-El prompt va aquí dentro, entero y con sus saltos de línea,
-para que se sepa dónde empieza y dónde acaba.
+ok  hay va el prompt inicial : "Lee el código de FlowSync que hace el registro, el login, la sesión y el perfil, y escríbeme un documento que describa cómo se comporta hoy, con este formato…"
 ```
 
-**Qué salió:** (opcional, una línea) funcionó a la primera / tuve que insistir / me inventó una ruta que no existe.
+**Qué salió:** el prompt no decía el formato ni dónde guardar el archivo (acaba en "con este formato…"); el agente tomó el formato, las reglas y la ruta `docs/spec-viva/bgp.md` de lo hablado antes en la misma sesión. Escribió 20 requisitos de las dos capas y probó algunas respuestas de la API con curl contra el backend local.
+
+## Prompt 2
+
+**Modelo:** Opus 5.5
+**Herramienta:** Claude Code (app de escritorio, código leído en WSL)
+
+```
+enséñame el código del requisito credenciales incorrectas indistinguibles
+```
